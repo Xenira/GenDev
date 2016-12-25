@@ -6,7 +6,9 @@
   "scripts": {
     "test": "jasmine-ts",
     "start": "npm run build:live",
-    "build:live": "nodemon -e ts,json --exec call ./node_modules/.bin/ts-node.cmd ./index.ts"
+    "build:live": "nodemon -e ts,json --exec ./node_modules/.bin/ts-node ./index.ts",
+    "add-test": "npm run build:add-test",
+    "build:add-test": "nodemon -e ts,json --exec ./node_modules/.bin/ts-node ./test/simple-add-test.ts"
   },
   "author": "",
   "license": "ISC",
